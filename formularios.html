@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso HTML5-CSS3</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body bgcolor=#FFFFFF>
+    <div class="container shadow">
+        <header>
+            <div class="row align-items-center">
+                <div class="col-3"><img src="img/yeaaaah.png" alt="logo" width="80"></div>
+                <div class="col-9">
+                    <span id="btnmenu" onclick="opendrawer()">&#127918;</span>
+                    <nav id="menu">
+                        <ul class="text-right">
+                            <li>
+                                <a href="index.html">
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="parrafos.html">
+                                    Párrafos
+                                </a>
+                            </li>
+                            <li>
+                                <a href="enlaces.html">
+                                    Enlaces
+                                </a>
+                            </li>
+                            <li>
+                                <a href="listas.html">
+                                    Listas
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tablas.html">
+                                    Tablas
+                                </a>
+                            </li>
+                            <li>
+                                <a href="formularios.html">
+                                    Formularios
+                                </a>
+                            </li>
+                            <li>
+                                <a href="multimedia.html">
+                                    Multimedia
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+
+        </header>
+        <main class="shadow">
+            <div class="px-3">
+                <h1 class="text-center bg-azul-o text-white py-3">HTML5 & CSS3</h1>
+            </div>
+            <div class="px-3">
+                <hr>
+            </div>
+            <div class="p-3">
+                <div id="Formularios" class="py-3">
+                    <h2 class="text-center">Formularios</h2>
+                    <form action="" method="post">
+                        <h3 class="text-purple" >Formularios con Login</h3>
+                        <fieldset>
+                            <legend>
+                                <h3 class="bg-purple">Login</h3>
+                            </legend>
+                            <p>Nombre: <input type="text" name="nombre" id=""></p>
+                            <p>Contraseña: <input type="password" name="clave" id=""></p>
+                            <p><input type="submit" value="Login" class="btn btn-blue"></p>
+                        </fieldset>
+                    </form>
+                    <form action="kk.php" method="get" class="form-registro">
+                        <h3>Formulario registro</h3>
+                        <fieldset>
+                            <legend>
+                               <h3 class="text-purple" >Registro</h3>
+                            </legend>
+                            <p><label for="">Input type text</label>
+                                <input type="text" name="nombre" id="" placeholder="Name">
+                            </p>
+                            <p><label for="">Input type password</label>
+                                <input type="password" name="clave" id="" placeholder="Password">
+                            </p>
+                            <p>Fecha Nacimiento: (Lista simple -> selecionar)
+                                <select name="dia" id="">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select>
+                                <select name="mes" id="">
+                                    <option value="1">Enero</option>
+                                    <option value="2">Febrero</option>
+                                    <option value="3">Marzo</option>
+                                    <option value="4">Abril</option>
+                                    <option value="5">Mayo</option>
+                                    <option value="6">Junio</option>
+                                    <option value="7">Julio</option>
+                                    <option value="8">Agosto</option>
+                                    <option value="9">Septiembre</option>
+                                    <option value="10">Octubre</option>
+                                    <option value="11">Noviembre</option>
+                                    <option value="12">Diciembre</option>
+                                </select>
+                                <select name="anio" id="">
+                                    <option value="2001">2001</option>
+                                    <option value="2002">2002</option>
+                                    <option value="2003">2003</option>
+                                    <option value="2004">2004</option>
+                                    <option value="2005">2005</option>
+                                    <option value="2006">2006</option>
+                                    <option value="2007">2007</option>
+                                    <option value="2008">2008</option>
+                                    <option value="2009">2009</option>
+                                    <option value="2010">2010</option>
+                                    <option value="2011">2011</option>
+                                    <option value="2012">2012</option>
+                                    <option value="2013">2013</option>
+                                    <option value="2014">2014</option>
+                                    <option value="2015">2015</option>
+                                    <option value="2016">2016</option>
+                                </select>
+                            <p>Comentarios (tag textarea):<br><textarea name="comentarios" id="" cols="50"
+                                    rows="4"></textarea></p>
+                            <p>Hobbies: (tag input type checkbox)<br>
+                                <input type="checkbox" name="cine" id=""> Cine <br>
+                                <input type="checkbox" name="deportes" id=""> Deportes <br>
+                                <input type="checkbox" name="lectura" id=""> Lectura <br>
+                                <input type="checkbox" name="viajar" id=""> Viajar <br>
+                            </p>
+                            <p>Deporte favorito: (tag input type radio)</p>
+                            <input type="radio" name="ec" id=""> Futbol <br>
+                            <input type="radio" name="ec" id=""> Baloncesto <br>
+                            <input type="radio" name="ec" id=""> Tenis<br>
+                            <input type="radio" name="ec" id=""> Karate<br>
+                            </p>
+                            <p>Provincia: (tag select multiple)<br></p>
+                            <select name="provincia" id="" multiple size="5">
+                                <option value="1">Albacete</option>
+                                <option value="1">Ciudad Real</option>
+                                <option value="3">Cuenca</option>
+                                <option value="1">Guadalajara</option>
+                                <option value="1">Toledo</option>
+                            </select>
+                            <p>Foto: (tag input type file) <input type="file" name="foto" id=""></p>
+                            <p><input type="submit" value="Enviar" class="btn btn-blue"></p>
+                        </fieldset>
+                    </form>
+                    
+                    
+                    
+                    <fieldset>
+                            <legend>
+                                <h3 class="bg-purple">Input Html:5</h3>
+                            </legend>
+                    <p><input type="text" name="Nombre" id=""  placeholder="Nombre"></p>
+                    <p><input type="password" name="contraseña" id="" placeholder="Contraseña"></p> 
+                    <p><input type="submit"  name="login"></p>
+                    </form>
+                    <form action="" method="post">
+                        <h3 class="text-purple">Formularios HTml:5</h3>
+                    <p><input type="color" name="color" id=""></p>
+                    <p><input type="date"  name="date"id=""></p>
+                    <p><input type="datetime-local" name="datetime-local" id=""></p>
+                    <p><input type="email" name="email" id=""></p>
+                    <p><input type="file"  name="file" id=""></p>
+                    <p><input type="number"  name="number" id=""></p>
+                    <p><input type="range" name="range" id=""></p>
+                    <p><input type="time"  name="time" id=""></p>
+                    <p><input type="url"  name="url" id=""></p>
+                    <p><input type="month"  name="month" id=""></p>
+                    <p><input type="week"  name="week" id=""></p>
+                </fieldset>
+                    </form>
+                </div>
+            </div>
+
+        </main>
+        <footer>
+            <h1 class="bg-azul-o text-center text-white py-3">&copy; Alex Muñoz</h1>
+        </footer>
+    </div>
+    <script>
+        function opendrawer() {
+            document.getElementById('menu').style.display = 'block';
+            document.getElementById('menu').style.witdh = '100%';
+        }
+    </script>
+</body>
+
+</html>
